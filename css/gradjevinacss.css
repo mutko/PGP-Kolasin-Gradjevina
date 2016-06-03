@@ -117,6 +117,87 @@ a, a:focus, a:hover, a:active {
     background-color: rgba(0, 0, 0, .6);
     z-index: 11;
 }
+
+/* 	=============
+	section usluge on homepage  */
+.usluge {
+	margin: 80px 0;
+}
+.usluge h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 36px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	position: relative;
+	padding-bottom: 100px;
+}
+.sta-nudimo {
+	display: inline-block;
+	font-size: 16px;
+	color: #c94645;
+	margin-bottom: 20px;
+	font-weight: 300;
+}
+.usluge h1::after {
+	content: "";
+    display: inline-block;
+    width: 80px;
+    height: 10px;
+    background: #c94645;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    margin-left: -40px;
+}
+.usluge i {
+	color: #c74645;
+}
+.usluge h2 {
+	margin: 25px 0 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+}
+.usluge p {
+	color: rgba(255,255,255,.5);
+	margin-bottom: 30px;
+}
+.usluge a {
+	text-transform: uppercase;
+	color: #c74645;
+	font-weight: bold;
+	padding: 20px 0;
+}
+.usluge a:hover {
+	text-decoration: none;
+	color: #fc5b5a;
+}
+.podusluge {
+	padding: 0;
+	position: relative;
+	color: #fff;
+}
+.podusluge:hover .podusluga-in {
+    opacity: 0.8;
+}
+.podusluga-in {
+	padding: 80px 30px;
+	-webkit-transition: opacity 0.4s ease-in-out;
+	transition: opacity 0.4s ease-in-out;
+}
+.podusluga-hover-1 {
+	background: #363643;
+}
+.podusluga-hover-2 {
+	background: #33333f;
+}
+.podusluga-hover-3 {
+	background: #30303b;
+}
+.podusluga-hover-4 {
+	background: #2d2d37;
+}
 /* extra Small devices (old phone, max 480) */
 @media only screen and (max-width : 480px) {
 	/* 	=============
@@ -144,6 +225,15 @@ a, a:focus, a:hover, a:active {
 	.title-kolasin::after {
 	    width: 120px;
 	    margin-left: -60px;
+	}
+	
+	/* 	=============
+	section usluge on homepage  */
+	.usluge h1 {
+		font-size: 24px;
+	}
+	.sta-nudimo {
+		font-size: 12px;
 	}
 } /* end of max-width: 480px */
 
@@ -205,6 +295,15 @@ a, a:focus, a:hover, a:active {
 		width: 110px;
 		height: 60px;
 	}
+
+	/* 	=============
+	section usluge on homepage  */
+	.usluge {
+		margin: 120px 0;
+	}
+	.podusluge h2 {
+		height: 40px;
+	} /* zbog jednake visine kolona */
 } /* end of min-width: 992x */
 
 /* Large devices (large desktops, 1200px and up) */
@@ -221,7 +320,7 @@ a, a:focus, a:hover, a:active {
 	/* 	=============
 	jumbotron  */
 	.jumbotron {
-		height: 800px;
+		height: 700px;
 	}
 	.title {
 		top: 30%;
@@ -230,6 +329,6 @@ a, a:focus, a:hover, a:active {
 		font-size: 52px;
 	}
 	h1.title-kolasin {
-		font-size: 104px;
+		font-size: 100px;
 	}	
 } /* end of min-width: 1200px */
