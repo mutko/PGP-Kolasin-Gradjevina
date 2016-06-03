@@ -9,7 +9,7 @@ a, a:focus, a:hover, a:active {
 }*/
 
 /* 	=============
-	mobile page navigation  */
+	page navigation  */
 .navbar-brand {
 	padding: 5px 0 0 30px;
 }
@@ -68,8 +68,59 @@ a, a:focus, a:hover, a:active {
 	font-size: 12px;
 }
 
+/* 	=============
+	jumbotron  */
+.jumbotron {
+	position: relative;
+	height: 500px;
+	background: url('../images/bg-1.jpg') no-repeat;
+	background-size: 100%;
+	background-position: center bottom;
+}
+.title {
+	position: absolute;
+	top: 20%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	z-index: 21;
+}
+.title-industrija {
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	font-size: 33px;
+}
+.title-kolasin {
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 64px;
+}
+.title-kolasin::after {
+	content: "";
+    display: inline-block;
+    width: 160px;
+    height: 10px;
+    background: #c94645;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -80px;
+}
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 11;
+}
 /* extra Small devices (old phone, max 480) */
 @media only screen and (max-width : 480px) {
+	/* 	=============
+	page navigation  */
 	.navbar-brand {
 		padding-left: 20px;
 	}
@@ -79,11 +130,27 @@ a, a:focus, a:hover, a:active {
 	.navbar-collapse .nav>li>a {
 		padding-left: 20px;
 	}
+	/* 	=============
+	jumbotron  */
+	.jumbotron {
+		height: 450px;
+	}
+	.title-industrija {
+		font-size: 22px;
+	}
+	.title-kolasin {
+		font-size: 44px;
+	}
+	.title-kolasin::after {
+	    width: 120px;
+	    margin-left: -60px;
+	}
 } /* end of max-width: 480px */
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-	
+	/* 	=============
+	page navigation  */
 	.navbar .navbar-nav {
 	    display: inline-block;
 	    float: none;
@@ -98,15 +165,32 @@ a, a:focus, a:hover, a:active {
 	.navbar .container {
 		padding: 0;
 	}
+	.navbar-collapse {
+		padding: 0;
+	}
 	.navbar-collapse .nav>li>a {
-		padding: 25px 0 10px 30px;
+		padding: 25px 0 5px 30px;
 	}
 	.navbar-collapse .nav>li>a.hidden-xs {
 		padding: 5px 0 5px 30px; 
 	}
 	.navbar-collapse .nav>li>a.hidden-xs img {
-		width: 110px;
+		width: 100px;
 	}
+	/* 	=============
+	jumbotron  */
+	.jumbotron {
+		height: 550px;
+	}
+	.title {
+		top: 30%;
+	}
+	h1.title-industrija {
+		font-size: 36px;
+	}
+	h1.title-kolasin {
+		font-size: 72px;
+	}	
 } /* end of min-width: 768px */
 
 /* Medium devices (desktops, 992px and up) */
@@ -118,7 +202,8 @@ a, a:focus, a:hover, a:active {
 		padding: 5px 30px; 
 	}
 	.navbar-collapse .nav>li>a.hidden-xs img {
-		width: 120px;
+		width: 110px;
+		height: 60px;
 	}
 } /* end of min-width: 992x */
 
@@ -133,8 +218,18 @@ a, a:focus, a:hover, a:active {
 	.navbar-collapse .nav>li>a.hidden-xs {
 		padding: 10px 40px; 
 	}
-	.navbar-collapse .nav>li>a.hidden-xs img {
-		width: 110px;
-		height: 60px;
+	/* 	=============
+	jumbotron  */
+	.jumbotron {
+		height: 800px;
 	}
+	.title {
+		top: 30%;
+	}
+	h1.title-industrija {
+		font-size: 52px;
+	}
+	h1.title-kolasin {
+		font-size: 104px;
+	}	
 } /* end of min-width: 1200px */
