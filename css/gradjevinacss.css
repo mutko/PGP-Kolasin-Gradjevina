@@ -76,7 +76,7 @@ a.read-more:hover {
 }
 
 /* 	=============
-	jumbotron  */
+	.jumbotron on homepage */
 .jumbotron {
 	position: relative;
 	height: 500px;
@@ -126,12 +126,14 @@ a.read-more:hover {
 }
 
 /* 	=============
-	section usluge on homepage  */
-.usluge {
+	section .usluge on homepage  */
+.usluge, 
+.reference {
 	margin: 80px 0;
 }
 .usluge h1,
-.aktuelno h1 {
+.aktuelno h1,
+.reference h1 {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 36px;
@@ -148,7 +150,8 @@ a.read-more:hover {
 	font-weight: 300;
 }
 .usluge h1::after,
-.aktuelno h1::after {
+.aktuelno h1::after,
+.reference h1::after {
 	content: "";
     display: inline-block;
     width: 80px;
@@ -199,10 +202,12 @@ a.read-more:hover {
 }
 
 /* 	=============
-	section aktuelno on homepage  */
+	section .aktuelno on homepage  */
+
 /*.aktuelno {
 	background-color: #2d2d37;
-}*/
+} container-fluid i fotografija preko celog ekrana (full width) */
+
 .aktuelno {
 	text-align: center
 }
@@ -219,6 +224,49 @@ a.read-more:hover {
 	margin: 30px 0;
 }
 
+/* 	=============
+	section .reference on homepage  */
+.reference {
+	text-align: center;
+}
+.radovi {
+	padding: 0;
+}
+a.link-ka-referenci {
+	color: #2d2d37;
+}
+a.link-ka-referenci:hover {
+	text-decoration: none;
+	color: #fff;
+}
+a.link-ka-referenci:hover .caption {
+	background: #2d2d37;
+	-webkit-transition: background 0.4s ease-in-out;
+	transition: background 0.4s ease-in-out;
+}
+.radovi .caption {
+	padding: 40px 20px;
+}
+.naslov-reference {
+	margin: 0 0 20px 0;
+	color: #a1a1b2;
+	letter-spacing: 5px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+a.link-ka-referenci:hover .naslov-reference {
+	color: #c74645;
+}
+.text-reference {
+	margin: 0;
+	letter-spacing: 3px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.reference .read-more {
+	font-size: 24px;
+	padding: 30px 40px;
+}
 /* extra Small devices (old phone, max 480) */
 @media only screen and (max-width : 480px) {
 	/* 	=============
@@ -327,7 +375,8 @@ a.read-more:hover {
 
 	/* 	=============
 	section usluge on homepage  */
-	.usluge {
+	.usluge, 
+	.reference {
 		margin: 120px 0;
 	}
 	.podusluge h2 {
