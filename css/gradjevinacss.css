@@ -302,7 +302,6 @@ a.link-ka-referenci:hover .naslov-reference {
 .page-footer {
 	position: relative;
 }
-
 .page-footer h3 {
 	text-transform: uppercase;
 	font-size: 18px;
@@ -321,26 +320,40 @@ a.link-ka-referenci:hover .naslov-reference {
     bottom: 10px;
     left: 0;
 }
-
-.info a {
-	text-transform: uppercase;
-	color: #333;
-	font-weight: bold;
+/* footer nav */
+.footer-nav li {
+	margin: 10px 0;
 }
-.info a:hover {
+.footer-nav a {
+	text-transform: uppercase;
+	color: rgb(51, 51, 51);
+	padding: 10px 0;
+}
+.footer-nav a:hover {
 	text-decoration: none;
 	color: #fc5b5a;
 }
+.footer-nav a.active {
+	color: #fc5b5a;
+	font-weight: bold;
+}
+/* footer info */
+.info li {
+	padding: 10px 0;
+}
+.info i {
+	margin-right: 10px;
+}
 
-
+/* footer copyright */
 .copyright {
 	background-color: #2d2d37;
 	color: #fff;
+	margin-top: 60px;
 	padding: 30px 0 20px;
 }
 
-
-.return-to-top a,
+/* to-fb button */
 a.to-fb {
 	color: #fff;
 	background-color: #2d2d37;
@@ -355,14 +368,8 @@ a.to-fb {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
-.return-to-top a:hover,
 a.to-fb:hover {
 	background-color: #c94645;
-}
-.return-to-top {
-	position: absolute;
-	bottom: 10px;
-	right: 20px;
 }
 /* extra Small devices (old phone, max 480) */
 @media only screen and (max-width : 480px) {
