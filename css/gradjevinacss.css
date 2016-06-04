@@ -4,9 +4,16 @@ body {
 a, a:focus, a:hover, a:active {
     outline: 0 !important;
 }
-/*.aktuelno {
-	background-color: #2d2d37;
-}*/
+a.read-more {
+	text-transform: uppercase;
+	color: #c74645;
+	font-weight: bold;
+	padding: 20px 0;
+}
+a.read-more:hover {
+	text-decoration: none;
+	color: #fc5b5a;
+}
 
 /* 	=============
 	page navigation  */
@@ -49,7 +56,7 @@ a, a:focus, a:hover, a:active {
 }
 .navbar-toggle .icon-bar:last-child {
 	margin-bottom: 0;
-}
+} /* poslednji link no padding*/
 .navbar-toggle:focus,
 .navbar-toggle:hover {
 	background:none;
@@ -123,7 +130,8 @@ a, a:focus, a:hover, a:active {
 .usluge {
 	margin: 80px 0;
 }
-.usluge h1 {
+.usluge h1,
+.aktuelno h1 {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 36px;
@@ -132,14 +140,15 @@ a, a:focus, a:hover, a:active {
 	position: relative;
 	padding-bottom: 100px;
 }
-.sta-nudimo {
+.pod-naslov {
 	display: inline-block;
 	font-size: 16px;
 	color: #c94645;
 	margin-bottom: 20px;
 	font-weight: 300;
 }
-.usluge h1::after {
+.usluge h1::after,
+.aktuelno h1::after {
 	content: "";
     display: inline-block;
     width: 80px;
@@ -162,16 +171,6 @@ a, a:focus, a:hover, a:active {
 .usluge p {
 	color: rgba(255,255,255,.5);
 	margin-bottom: 30px;
-}
-.usluge a {
-	text-transform: uppercase;
-	color: #c74645;
-	font-weight: bold;
-	padding: 20px 0;
-}
-.usluge a:hover {
-	text-decoration: none;
-	color: #fc5b5a;
 }
 .podusluge {
 	padding: 0;
@@ -198,6 +197,28 @@ a, a:focus, a:hover, a:active {
 .podusluga-hover-4 {
 	background: #2d2d37;
 }
+
+/* 	=============
+	section aktuelno on homepage  */
+/*.aktuelno {
+	background-color: #2d2d37;
+}*/
+.aktuelno {
+	text-align: center
+}
+.aktuelno img {
+	margin: 0 auto;
+}
+.aktuelno h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 60px;
+}
+.aktuelno p {
+	font-size: 16px;
+	margin: 30px 0;
+}
+
 /* extra Small devices (old phone, max 480) */
 @media only screen and (max-width : 480px) {
 	/* 	=============
@@ -232,8 +253,16 @@ a, a:focus, a:hover, a:active {
 	.usluge h1 {
 		font-size: 24px;
 	}
-	.sta-nudimo {
+	.pod-naslov {
 		font-size: 12px;
+	}
+	/* 	=============
+	section aktuelno on homepage  */
+	.aktuelno h3 {
+		font-size: 22px;
+	}
+	.aktuelno p {
+		font-size: 14px;
 	}
 } /* end of max-width: 480px */
 
