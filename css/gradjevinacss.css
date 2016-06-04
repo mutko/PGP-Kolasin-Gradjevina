@@ -133,7 +133,8 @@ a.read-more:hover {
 }
 .usluge h1,
 .aktuelno h1,
-.reference h1 {
+.reference h1,
+.saradnja h1 {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 36px;
@@ -151,7 +152,8 @@ a.read-more:hover {
 }
 .usluge h1::after,
 .aktuelno h1::after,
-.reference h1::after {
+.reference h1::after,
+.saradnja h1::after {
 	content: "";
     display: inline-block;
     width: 80px;
@@ -264,9 +266,40 @@ a.link-ka-referenci:hover .naslov-reference {
 	text-transform: uppercase;
 }
 .reference .read-more {
-	font-size: 24px;
-	padding: 30px 40px;
+	font-size: 32px;
+	padding: 40px 50px;
 }
+
+/* 	=============
+	section .saradnja on homepage  */
+.saradnja {
+	background-color: #2d2d37;
+	padding: 80px 0;
+	text-align: center;
+	color: #fff;
+} 
+.saradnja img {
+	margin: 30px auto;
+}
+.carousel-caption {
+	position: static;
+}
+.carousel p {
+	margin: -20px 0 40px 0;
+}
+.carousel-indicators .active {
+	border: none;
+	background: #c94645;
+}
+.carousel-indicators li {
+	background: #000;
+	border: none;
+}
+
+/* 	=============
+	footer  */
+
+
 /* extra Small devices (old phone, max 480) */
 @media only screen and (max-width : 480px) {
 	/* 	=============
@@ -308,9 +341,16 @@ a.link-ka-referenci:hover .naslov-reference {
 	section aktuelno on homepage  */
 	.aktuelno h3 {
 		font-size: 22px;
+		margin-top: 30px;
 	}
 	.aktuelno p {
 		font-size: 14px;
+	}
+	/* 	=============
+	section aktuelno on homepage  */
+	.reference .read-more {
+		font-size: 18px;
+		padding: 30px 20px;
 	}
 } /* end of max-width: 480px */
 
@@ -376,12 +416,19 @@ a.link-ka-referenci:hover .naslov-reference {
 	/* 	=============
 	section usluge on homepage  */
 	.usluge, 
-	.reference {
+	.reference,
+	.saradnja {
 		margin: 120px 0;
 	}
 	.podusluge h2 {
 		height: 40px;
 	} /* zbog jednake visine kolona */
+
+		/* 	=============
+	section .saradnja on homepage  */
+	.saradnja {
+		padding: 120px 0;
+	}
 } /* end of min-width: 992x */
 
 /* Large devices (large desktops, 1200px and up) */
