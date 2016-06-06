@@ -14,7 +14,33 @@ a.read-more:hover {
 	text-decoration: none;
 	color: #fc5b5a;
 }
-
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 36px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	position: relative;
+	padding-bottom: 100px;
+}
+.pod-naslov {
+	display: inline-block;
+	font-size: 16px;
+	color: #c94645;
+	margin-bottom: 20px;
+	font-weight: 300;
+}
+h1::after {
+	content: "";
+    display: inline-block;
+    width: 80px;
+    height: 10px;
+    background: #c94645;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    margin-left: -40px;
+}
 /* 	=============
 	page navigation  */
 .navbar-brand {
@@ -130,39 +156,6 @@ a.read-more:hover {
 .usluge, 
 .reference {
 	margin: 80px 0;
-}
-.usluge h1,
-.aktuelno h1,
-.reference h1,
-.saradnja h1 {
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 36px;
-	font-weight: bold;
-	letter-spacing: 5px;
-	position: relative;
-	padding-bottom: 100px;
-}
-.pod-naslov {
-	display: inline-block;
-	font-size: 16px;
-	color: #c94645;
-	margin-bottom: 20px;
-	font-weight: 300;
-}
-.usluge h1::after,
-.aktuelno h1::after,
-.reference h1::after,
-.saradnja h1::after {
-	content: "";
-    display: inline-block;
-    width: 80px;
-    height: 10px;
-    background: #c94645;
-    position: absolute;
-    bottom: 60px;
-    left: 50%;
-    margin-left: -40px;
 }
 .usluge i {
 	color: #c74645;
@@ -371,8 +364,35 @@ a.to-fb {
 a.to-fb:hover {
 	background-color: #c94645;
 }
+
+/* 	=============
+	O NAMA.html */
+.o-kompaniji {
+	margin: 80px 0;
+}
+.o-kompaniji .no-padding {
+	padding: 0;
+}
+.o-kompaniji-in {
+	background-color: #2d2d37;
+	color: rgba(255,255,255,.7);
+	line-height: 1.6;
+	padding: 60px 30px 30px;
+	font-size: 16px;
+	margin: -15px 0;
+}
+.o-kompaniji p {
+	padding-bottom: 30px;
+}
 /* extra Small devices (old phone, max 480) */
 @media only screen and (max-width : 480px) {
+	h1,
+	h2.title-kolasin {
+		font-size: 24px;
+	}
+	.pod-naslov {
+		font-size: 12px;
+	}
 	/* 	=============
 	page navigation  */
 	.navbar-brand {
@@ -399,15 +419,6 @@ a.to-fb:hover {
 	    width: 120px;
 	    margin-left: -60px;
 	}
-	
-	/* 	=============
-	section usluge on homepage  */
-	.usluge h1 {
-		font-size: 24px;
-	}
-	.pod-naslov {
-		font-size: 12px;
-	}
 	/* 	=============
 	section aktuelno on homepage  */
 	.aktuelno h3 {
@@ -424,12 +435,6 @@ a.to-fb:hover {
 		padding: 30px 20px;
 	}
 
-	/* 	=============
-	footer  */
-	.return-to-top {
-		bottom: -80px;
-		right: 0;
-	}
 } /* end of max-width: 480px */
 
 /* Small devices (tablets, 768px and up) */
@@ -470,10 +475,10 @@ a.to-fb:hover {
 	.title {
 		top: 30%;
 	}
-	h1.title-industrija {
+	h2.title-industrija {
 		font-size: 36px;
 	}
-	h1.title-kolasin {
+	h2.title-kolasin {
 		font-size: 72px;
 	}	
 
@@ -507,11 +512,11 @@ a.to-fb:hover {
 		padding: 120px 0;
 		margin: 100px 0;
 	}
-
 	/* 	=============
-	footer  */
-
-
+		O NAMA.html */
+	.o-kompaniji {
+		margin: 120px 0;
+	}
 } /* end of min-width: 992x */
 
 /* Large devices (large desktops, 1200px and up) */
@@ -533,10 +538,10 @@ a.to-fb:hover {
 	.title {
 		top: 30%;
 	}
-	h1.title-industrija {
+	h2.title-industrija {
 		font-size: 52px;
 	}
-	h1.title-kolasin {
+	h2.title-kolasin {
 		font-size: 100px;
 	}	
 } /* end of min-width: 1200px */
